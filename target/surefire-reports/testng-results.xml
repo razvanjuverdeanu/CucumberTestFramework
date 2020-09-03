@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="54028" started-at="2020-09-03T10:37:14 EEST" finished-at="2020-09-03T10:38:08 EEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:steps.RunnerTest@64f6106c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="54028" started-at="2020-09-03T10:37:14 EEST" finished-at="2020-09-03T10:38:08 EEST">
+      <class name="steps.RunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:steps.RunnerTest@64f6106c]" name="setUpClass" is-config="true" duration-ms="245" started-at="2020-09-03T10:37:14 EEST" finished-at="2020-09-03T10:37:15 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:steps.RunnerTest@64f6106c]" name="runScenario" duration-ms="9108" started-at="2020-09-03T10:37:15 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-03T10:37:24 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Select random category and verify search results category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Category]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:steps.RunnerTest@64f6106c]" name="runScenario" duration-ms="12037" started-at="2020-09-03T10:37:24 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-03T10:37:36 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply price interval filter and order by highest price and check if the first product price is less or equal than the maximum value of interval"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Category]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:steps.RunnerTest@64f6106c]" name="runScenario" duration-ms="9962" started-at="2020-09-03T10:37:36 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-03T10:37:46 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply price interval filter and order by highest price and check if the first product price is less or equal than the maximum value of interval"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Category]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:steps.RunnerTest@64f6106c]" name="runScenario" duration-ms="12473" started-at="2020-09-03T10:37:46 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-03T10:37:58 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply price interval filter and sort by lowest price and check if the first product price is greater or equal than the minimum value of interval"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Category]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:steps.RunnerTest@64f6106c]" name="runScenario" duration-ms="10170" started-at="2020-09-03T10:37:58 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-03T10:38:08 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Apply price interval filter and sort by lowest price and check if the first product price is greater or equal than the minimum value of interval"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Category]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:steps.RunnerTest@64f6106c]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2020-09-03T10:38:08 EEST" finished-at="2020-09-03T10:38:08 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- steps.RunnerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
