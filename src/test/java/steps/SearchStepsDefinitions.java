@@ -4,6 +4,7 @@ import Utils.TestListener;
 import component.TheDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class SearchStepsDefinitions {
 
     private String randomCategory;
 
-    @And("I press search button")
+    @When("I press search button")
     public void iPressSearchButton() {
         homePage.clickSearchButton();
     }
@@ -42,7 +43,7 @@ public class SearchStepsDefinitions {
         assertTrue(pageHeader.contains(randomCategory));
     }
 
-    @And("I set a {string} value of {string} to price filter")
+    @When("I set a {string} value of {string} to price filter")
     public void iSeTPriceFilterByTypeAndValue(String type, String value) {
         searchPage.setPriceFilterByTypeAndVelue(type, value);
     }
@@ -52,14 +53,14 @@ public class SearchStepsDefinitions {
         assertTrue(searchPage.getSearchResultsText().contains(text));
     }
 
-    @And("I select a random search category")
+    @When("I select a random search category")
     public void iSelectARandomSearchCategory() {
         List<String> categoryList = homePage.getAllCategoryOptions();
         randomCategory = getRandomStringFromList(categoryList);
         homePage.selectByVisibleTextFromSearchCategoriesBox(randomCategory);
     }
 
-    @And("I sort by {string}")
+    @When("I sort by {string}")
     public void iSortBy(String text) {
         searchPage.sortSearchListByType(text);
     }

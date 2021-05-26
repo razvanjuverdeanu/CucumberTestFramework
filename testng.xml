@@ -6,7 +6,7 @@
 <!--    </listeners>-->
     <test verbose="2" preserve-order="true" name="C:/Users/RJ/IdeaProjects/EbaySeleniumTestFramework">
        <classes>
-           <class name="steps.RunnerTest"/>
+           <class name="runner.RunnerTest"/>
        </classes>
 
 

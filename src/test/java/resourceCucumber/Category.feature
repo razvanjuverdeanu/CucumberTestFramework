@@ -1,13 +1,14 @@
 Feature: Category
 
-  Scenario: Select random category and verify search results category
-    Given That I open ebay
+  Scenario Outline: Select random category and verify search results category
+    Given that I open ebay
     And I select a random search category
     And I press search button
     Then Page header display the category title
+    Examples:
 
   Scenario Outline: Apply price interval filter and order by highest price and check if the first product price is less or equal than the maximum value of interval
-    Given That I open ebay
+    Given that I open ebay
     And I select a random search category
     And I type "<text>" in search bar
     And I press search button
@@ -22,7 +23,7 @@ Feature: Category
 
 
   Scenario Outline: Apply price interval filter and sort by lowest price and check if the first product price is greater or equal than the minimum value of interval
-    Given That I open ebay
+    Given that I open ebay
     And I select a random search category
     And I type "<text>" in search bar
     And I press search button
