@@ -3,7 +3,7 @@ Feature: Category
   Scenario Outline: Select random category and verify search results category
     Given that I open ebay
     And I select a random search category
-    And I press search button
+    When I press search button
     Then Page header display the category title
     Examples:
 
@@ -11,10 +11,10 @@ Feature: Category
     Given that I open ebay
     And I select a random search category
     And I type "<text>" in search bar
-    And I press search button
+    When I press search button
     Then Search results contains "<text>"
     And I set a "<type>" value of "<max_value>" to price filter
-    And I sort by "<order_type>"
+    When I sort by "<order_type>"
     Then The price of first product should be less or equal to the "<max_value>"
     Examples:
       | text | type    | max_value | order_type                      |
@@ -26,10 +26,10 @@ Feature: Category
     Given that I open ebay
     And I select a random search category
     And I type "<text>" in search bar
-    And I press search button
+    When I press search button
     Then Search results contains "<text>"
     And I set a "<type>" value of "<min_value>" to price filter
-    And I sort by "<order_type>"
+    When I sort by "<order_type>"
     Then The price of first product should be greater or equal to the "<min_value>"
     Examples:
       | text  | type    | min_value | order_type                     |
